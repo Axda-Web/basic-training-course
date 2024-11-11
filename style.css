@@ -1,0 +1,73 @@
+:root {
+    --dark-blue: #10141E;
+    --text-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-blue);
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+.recommended-section__title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+.recommended-section {
+    padding: 1rem;
+}
+
+.recommended-section__media-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+.media-card {
+    height: 110px;
+    width: 164px;
+    /* border: 1px solid red; */
+
+    @media (min-width: 768px) {
+        height: 140px;
+        width: 220px;
+    }
+
+    @media (min-width: 1024px) {
+        height: 174px;
+        width: 280px;
+    }
+}
+
+.media-card__image-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.media-card__image {
+    display: block;
+    border-radius: 8px;
+}
+
+
