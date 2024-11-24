@@ -63,9 +63,20 @@ body {
 .media-card__image-container {
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
 }
 
 .media-card__image {
     display: block;
     border-radius: 8px;
+}
+
+.media-card__bookmark-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
