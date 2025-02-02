@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 2,
+    "title": "Boubacar in Annecy",
+    "image": "./boubacar.svg",
+    "year": 2025,
+    "type": "TV Show",
+    "rate": "A"
+  },
+  {
+    "id": 3,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 4,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 5,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 6,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 7,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  },
+  {
+    "id": 8,
+    "title": "The Great Lands",
+    "image": "./movie.svg",
+    "year": 2019,
+    "type": "Movie",
+    "rate": "E"
+  }
+]

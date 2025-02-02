@@ -32,6 +32,8 @@ body {
 
 .recommended-section {
     padding: 1rem;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .recommended-section__media-container {
