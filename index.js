@@ -26,6 +26,21 @@ async function fetchMedias() {
                     </article>`;
     mediaContainer.innerHTML += mediaCard;
   });
+
+  const bookmarkButtons = document.querySelectorAll(
+    ".media-card__bookmark-button"
+  );
+
+  const toggleBookmark = (event) => {
+    console.log("test click button");
+    event.currentTarget.classList.toggle(
+      "media-card__bookmark-button--bookmarked"
+    );
+  };
+
+  bookmarkButtons.forEach((button) => {
+    button.addEventListener("click", toggleBookmark);
+  });
 }
 
 fetchMedias();

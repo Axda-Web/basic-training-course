@@ -5,15 +5,17 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   },
   {
     "id": 2,
     "title": "Boubacar in Annecy",
-    "image": "./boubacar.svg",
+    "image": "./movie.svg",
     "year": 2025,
     "type": "TV Show",
-    "rate": "A"
+    "rate": "A",
+    "isBookmarked": false
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   },
   {
     "id": 6,
@@ -53,7 +58,8 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   },
   {
     "id": 8,
@@ -61,6 +67,7 @@
     "image": "./movie.svg",
     "year": 2019,
     "type": "Movie",
-    "rate": "E"
+    "rate": "E",
+    "isBookmarked": false
   }
 ]
