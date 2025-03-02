@@ -1,8 +1,9 @@
 :root {
     --dark-blue: #10141E;
-    --red: #FC4747;
+    --test: 3px solid red;
     --text-color: #fff;
     --media-card-body-text-color: hsla(0deg, 0%, 255%, .75);
+    --bookmark-button-hover-color: hsla(0deg, 0%, 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,10 +94,6 @@ body {
     background-color: transparent;
     padding: 0;
     margin: 0;
-
-    &--bookmarked {
-        background-color: var(--red);
-    }
 }
 
 .media-card__body {

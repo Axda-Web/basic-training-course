@@ -10,7 +10,7 @@ async function fetchMedias() {
                         <div class="media-card__image-container">
                             <img class="media-card__image" src="./Rectangle.jpg" alt="media cover">
                             <button class="media-card__bookmark-button">
-                                <img src="./bookmark.svg" alt="bookmark icon">
+                                <img class="media-card__bookmark-button__icon" src="./bookmark.svg" alt="bookmark icon">
                             </button>
                         </div>
                             <div class="media-card__body">
@@ -32,10 +32,15 @@ async function fetchMedias() {
   );
 
   const toggleBookmark = (event) => {
-    console.log("test click button");
-    event.currentTarget.classList.toggle(
-      "media-card__bookmark-button--bookmarked"
-    );
+    const currentSrc = event.currentTarget.children[0].src;
+
+    if (currentSrc === "http://127.0.0.1:5500/bookmark.svg") {
+      event.currentTarget.children[0].src =
+        "http://127.0.0.1:5500/bookmark-full.svg";
+    } else {
+      event.currentTarget.children[0].src =
+        "http://127.0.0.1:5500/bookmark.svg";
+    }
   };
 
   bookmarkButtons.forEach((button) => {
