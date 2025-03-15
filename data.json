@@ -6,7 +6,7 @@
     "year": 2019,
     "type": "Movie",
     "rate": "E",
-    "isBookmarked": false
+    "isBookmarked": true
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "year": 2025,
     "type": "TV Show",
     "rate": "A",
-    "isBookmarked": false
+    "isBookmarked": true
   },
   {
     "id": 3,
