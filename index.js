@@ -2,13 +2,15 @@ console.log("Hello World");
 const mediaContainer = document.getElementById("media-container");
 
 async function fetchMedias() {
-  const medias = await fetch("./data.json");
+  const medias = await fetch("http://localhost:3000/medias");
   const jsonMedias = await medias.json();
 
   jsonMedias.forEach((media) => {
     const mediaCard = `<article class="media-card">
                         <div class="media-card__image-container">
-                            <img class="media-card__image" src="./Rectangle.jpg" alt="media cover">
+                            <img class="media-card__image" src="./${
+                              media.illustration
+                            }" alt="media cover">
                             <button data-id=${
                               media.id
                             } class="media-card__bookmark-button">
@@ -45,16 +47,24 @@ async function fetchMedias() {
     ".media-card__bookmark-button"
   );
 
-  const toggleBookmark = (event) => {
-    const currentSrc = event.currentTarget.children[0].src;
+  const toggleBookmark = async (event) => {
     const currentDataId = event.currentTarget.dataset.id;
 
-    if (currentSrc === "http://127.0.0.1:5500/bookmark.svg") {
-      event.currentTarget.children[0].src =
-        "http://127.0.0.1:5500/bookmark-full.svg";
-    } else {
-      event.currentTarget.children[0].src =
-        "http://127.0.0.1:5500/bookmark.svg";
+    try {
+      const data = await fetch(`http://localhost:3000/medias/${currentDataId}`);
+      const dataJson = await data.json();
+
+      await fetch(`http://localhost:3000/medias/${dataJson?.id}`, {
+        method: "PUT",
+        body: JSON.stringify({
+          ...dataJson,
+          isBookmarked: !dataJson.isBookmarked,
+        }),
+      });
+
+      document.reload();
+    } catch (e) {
+      console.log("error obj: ", e);
     }
   };
 
